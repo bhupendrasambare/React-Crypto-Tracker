@@ -1,5 +1,6 @@
 {
   "name": "crypto-tracker",
+  "homepage": "https://bhupendrasambare.github.io/React-Crypto-Tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.2.1",
     "axios": "^1.1.3",
     "bootstrap": "4.6",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +21,8 @@
     "zustand": "^4.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

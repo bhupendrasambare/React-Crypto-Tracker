@@ -10,7 +10,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route index element={<Home/>}/>
-                <Route path='/:id' element={<Crypto/>}/>
+                <Route path='/coin/:id' element={<Crypto/>}/>
             </Routes>
         </BrowserRouter>
     </div>

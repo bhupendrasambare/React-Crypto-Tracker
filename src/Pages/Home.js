@@ -59,7 +59,7 @@ function Home() {
                         
                         return (
                                 <div className='my-3 card shadow'>
-                                    <Link className='ml-3 text-decoration-none' to={(coin.item)?("/"+coin.item?.id):("/"+coin.id)}>
+                                    <Link className='ml-3 text-decoration-none' to={(coin.item)?("/coin/"+coin.item?.id):("/coin/"+coin.id)}>
                                         <div className='d-flex'>
 
                                             <img width={70} className="mr-4 rounded-circle shadow p-2 m-2" src={(coin.item)?(coin.item?.large):(coin.large)}/>
