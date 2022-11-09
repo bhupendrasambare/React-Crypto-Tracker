@@ -45,7 +45,7 @@ function ProductGraph(param) {
           data={data[0]}
           margin={{
             top: 10,
-            right: 30,
+            right: 0,
             left: 0,
             bottom: 0,
           }}

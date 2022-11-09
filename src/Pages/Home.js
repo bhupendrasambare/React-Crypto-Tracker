@@ -13,7 +13,7 @@ function Home() {
             setCoins(preState =>
                 {
                     preState = [];
-                    return ([...preState,result.data.coins])
+                    return ([...preState,result.data.coins.slice(0).reverse()])
                 });
         })
     }
@@ -62,10 +62,10 @@ function Home() {
                                     <Link className='ml-3 text-decoration-none' to={(coin.item)?("/"+coin.item?.id):("/"+coin.id)}>
                                         <div className='d-flex'>
 
-                                            <img height={70} className="mr-4 rounded-circle shadow p-2 m-2" src={(coin.item)?(coin.item?.large):(coin.large)}/>
+                                            <img width={70} className="mr-4 rounded-circle shadow p-2 m-2" src={(coin.item)?(coin.item?.large):(coin.large)}/>
                                             <div className='my-auto d-flex justify-conetnt-between w-100 mr-5'>
                                                 <div className='mr-3'>{(coin.item)?(coin.item?.name):(coin.name)}</div>
-                                                <div className='ml-auto text-break'>{(coin.item)?(coin.item?.price_btc):(coin.price_btc)}</div>
+                                                <div className='ml-auto text-break'>{(coin.item)?(coin.item?.price_btc +" Bitcoin(s)"):(coin?.price_btc)}</div>
                                             
                                             </div>
                                         </div>

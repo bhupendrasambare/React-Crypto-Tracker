@@ -19,3 +19,9 @@
     min-height: 100vh;
     padding-bottom: 30px;
 }
+.fs-small{
+    font-size: 12px;
+}
+.w-50{
+    width: 50%;
+}
