@@ -18,7 +18,7 @@ function ProductGraph(param) {
                   const timeDate = new Date(timestamp);
                   
                   return {
-                      date:timeDate.getUTCDate() +"-"+ (timeDate.getUTCMonth()+1) +"-"+ timeDate.getUTCFullYear() + " " + timeDate.getUTCHours() + ":" + timeDate.getUTCMinutes(),
+                      date:timeDate.getUTCDate() +"-"+ (timeDate.getUTCMonth()+1) +"-"+ timeDate.getUTCFullYear() + " " + timeDate.getUTCHours() + ":" + timeDate.getUTCMinutes()+"0",
                       "$":p.toFixed(2),
                   }
             })
@@ -37,7 +37,7 @@ function ProductGraph(param) {
     },[days])
 
   return (
-    <div >
+    <div className='card shadow rounded p-3 mt-5'>
         <ResponsiveContainer className="mt-5" height={300}>
         <AreaChart
           width={500}
@@ -59,19 +59,17 @@ function ProductGraph(param) {
       </ResponsiveContainer>
 
       <div className="mt-3 text-light d-flex justify-content-around">
-        <button className={((days==7)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3"} onClick={() =>setDays(7)}>7D</button>
+        <button className={((days==7)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 shadow"} onClick={() =>setDays(7)}>7D</button>
         
-        <button className={((days==31)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 "} onClick={() =>setDays(31)}>1M</button>
+        <button className={((days==31)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 shadow"} onClick={() =>setDays(31)}>1M</button>
 
-        <button className={((days==93)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 "} onClick={() =>setDays(93)}>3M</button>
+        <button className={((days==186)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 shadow"} onClick={() =>setDays(186)}>6M</button>
 
-        <button className={((days==186)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 "} onClick={() =>setDays(186)}>6M</button>
+        <button className={((days==365)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 shadow"} onClick={() =>setDays(365)}>1Y</button>
 
-        <button className={((days==365)?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 "} onClick={() =>setDays(365)}>1Y</button>
+        <button className={((days==(365*3))?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 shadow"} onClick={() =>setDays(365*3)}>3Y</button>
 
-        <button className={((days==(365*3))?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 "} onClick={() =>setDays(365*3)}>3Y</button>
-
-        <button className={((days==(365*5))?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 "} onClick={() =>setDays(365*5)}>5Y</button>
+        <button className={((days==(365*5))?"bg-success text-light":"bg-light text-dark")+" btn btn-sm rounded-pill px-3 shadow"} onClick={() =>setDays(365*5)}>5Y</button>
       </div>
     </div>
   )
