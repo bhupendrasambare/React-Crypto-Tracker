@@ -7,12 +7,10 @@ import Home from './Pages/Home';
 function App() {
   return (
     <div>
-        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path='/coin/:id' element={<Crypto/>}/>
             </Routes>
-        </HashRouter>
     </div>
   );
 }
