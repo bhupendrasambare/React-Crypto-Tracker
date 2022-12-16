@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Crypto-Tracker/static/css/main.07a02d4d.css",
-    "main.js": "/React-Crypto-Tracker/static/js/main.d0f9a628.js",
-    "static/media/page-bg.jpg": "/React-Crypto-Tracker/static/media/page-bg.608febcc5867108f259b.jpg",
-    "static/media/first-bg.jpg": "/React-Crypto-Tracker/static/media/first-bg.964aa7fe8c2559bdd2c3.jpg",
-    "index.html": "/React-Crypto-Tracker/index.html",
-    "main.07a02d4d.css.map": "/React-Crypto-Tracker/static/css/main.07a02d4d.css.map",
-    "main.d0f9a628.js.map": "/React-Crypto-Tracker/static/js/main.d0f9a628.js.map"
+    "main.css": "/static/css/main.88402800.css",
+    "main.js": "/static/js/main.d0f9a628.js",
+    "static/media/page-bg.jpg": "/static/media/page-bg.608febcc5867108f259b.jpg",
+    "static/media/first-bg.jpg": "/static/media/first-bg.964aa7fe8c2559bdd2c3.jpg",
+    "index.html": "/index.html",
+    "main.88402800.css.map": "/static/css/main.88402800.css.map",
+    "main.d0f9a628.js.map": "/static/js/main.d0f9a628.js.map"
   },
   "entrypoints": [
-    "static/css/main.07a02d4d.css",
+    "static/css/main.88402800.css",
     "static/js/main.d0f9a628.js"
   ]
 }
