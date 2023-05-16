@@ -20,14 +20,14 @@
 
 ## Home Page
 
-![Logo](./screenshoot/home.png)
+![Logo](https://github.com/bhupendrasambare/React-Crypto-Tracker/blob/e51b8e3942c42ebd8848296aa396b6ca3f627f50/screenshoot/home.png)
 
 ## Search Coin
 
-![Logo](./screenshoot/search.png)
+![Logo](https://github.com/bhupendrasambare/React-Crypto-Tracker/blob/e51b8e3942c42ebd8848296aa396b6ca3f627f50/screenshoot/search.png)
 
 
 ## About Coin
 
-![Logo](./screenshoot/about.png)
+![Logo](https://github.com/bhupendrasambare/React-Crypto-Tracker/blob/e51b8e3942c42ebd8848296aa396b6ca3f627f50/screenshoot/about.png)
 
